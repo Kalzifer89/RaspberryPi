@@ -36,13 +36,18 @@
           </ul>
         </div>
         <div class="card-body">
-          <h4 class="card-title">Bologna</h4>
-          <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
-          
            <div class="tab-content mt-3">
             <div class="tab-pane active" id="description" role="tabpanel">
-              <p class="card-text">It is the seventh most populous city in Italy, at the heart of a metropolitan area of about one million people. </p>
-              <a href="#" class="card-link text-danger">Read more</a>
+              <form>
+                <div class="form-group"><label>Wann ist Feierabend?</label><input class="form-control" type="time" name="feierabend" value="17:00" /></div><label>Arbeitstage:</label>
+                <div class="form-group">
+                    <div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="formCheck-1" name="montag" value="1" /><label class="form-check-label" for="formCheck-1">Montag</label></div>
+                    <div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="formCheck-2" name="dienstag" value="1" /><label class="form-check-label" for="formCheck-2">Dienstag</label></div>
+                    <div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="formCheck-4" name="mittwoch" value="1" /><label class="form-check-label" for="formCheck-2">Mittwoch</label></div>
+                    <div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="formCheck-3" name="donnerstag" value="1" /><label class="form-check-label" for="formCheck-2">Donnerstag</label></div>
+                    <div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="formCheck-2" name="freitag" value="1" /><label class="form-check-label" for="formCheck-2">Freitag</label></div>
+                </div><button class="btn btn-primary btn-block" type="submit">Speichern</button>
+            </form>
             </div>
              
             <div class="tab-pane" id="history" role="tabpanel" aria-labelledby="history-tab">  
@@ -56,7 +61,29 @@
             </div>
           </div>
         </div>
-      </div></div>
+      </div>
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item"><a class="nav-link active" href="#">Feierabend</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Feierabend Einstellungen</h4>
+                        <form>
+                            <div class="form-group"><label>Wo gehts heute zum Mittag hin?</label><select class="form-control">
+                                    <option value="Laden 1" selected="">Laden 1</option>
+                                    <option value="Laden 2">Laden 2</option>
+                                    <option value="Laden 3">Laden 3</option>
+                                    <option value="3">Laden 4</option>
+                                </select></div><label>Wann bist du wieder zurück?</label>
+                            <div class="form-group"><input class="form-control" type="time" name="feierabend" value="15:30"></div><button class="btn btn-primary btn-block" type="submit">Speichern</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <nav class="navbar navbar-light navbar-expand fixed-bottom">
             <div class="container-fluid"><a class="btn btn-success btn-block" role="button" href="index.html" style="margin-top: 10px;">Hauptmenü</a></div>
